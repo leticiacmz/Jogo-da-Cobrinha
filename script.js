@@ -13,19 +13,19 @@ let food ={
 }
 
 function criarBG(){
-    context.fillStyle = "lightgreen";
+    context.fillStyle = "LightSalmon";
     context.fillRect(0, 0, 16*box, 16*box); //desenha o retângulo usando x e y e a largura e altura setadas
 }
 
 function criarCobrinha (){
     for(i = 0; i < snake.length; i++){
-        context.fillStyle = "green";
+        context.fillStyle = "LimeGreen";
         context.fillRect(snake[i].x, snake[i].y, box, box);
     }
 }
 
 function drawFood (){
-    context.fillStyle = "red";
+    context.fillStyle = "Maroon";
     context.fillRect(food.x, food.y, box, box);
 }
 
